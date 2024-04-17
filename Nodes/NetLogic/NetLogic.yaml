@@ -1,0 +1,51 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: FtpServerLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: IPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "127.0.0.1"
+  - Name: Port
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 21
+  - Name: FilesystemRoot
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "%PROJECTDIR%\\"
+  - Name: MinimumPASVPort
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1024
+  - Name: MaximumPASVPort
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1100
+  - Class: Method
+    Name: StartFtpServer
+  - Class: Method
+    Name: StopFtpServer
+  - Name: Username
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Password
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: ""
+  - Name: ServerCertificateFile
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: ServerPrivateKeyFile
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: UseFTPS
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FubarDev.FtpServer" Version="3.1.2"/>
+    <PackageReference Include="FubarDev.FtpServer.Abstractions" Version="3.1.2"/>
+    <PackageReference Include="FubarDev.FtpServer.Commands" Version="3.1.2"/>
+    <PackageReference Include="FubarDev.FtpServer.FileSystem.DotNet" Version="3.1.2"/>
+    <PackageReference Include="Google.Protobuf" Version="3.24.3"/>
+    <PackageReference Include="Grpc.Core.Api" Version="2.57.0"/>
+    <PackageReference Include="Grpc.Net.Client" Version="2.57.0"/>
+    <PackageReference Include="Grpc.Net.Common" Version="2.57.0"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+    <PackageReference Include="RockwellAutomation.LogixDesigner.CSClient" Version="1.1.599"/>
+  </ItemGroup>
+  <Import Project="FTPServerAndPLCControl.references"/>
+</Project>
