@@ -8,7 +8,7 @@ Children:
   - Name: IPAddress
     Type: BaseDataVariableType
     DataType: String
-    Value: "127.0.0.1"
+    Value: "192.168.248.137"
   - Name: Port
     Type: BaseDataVariableType
     DataType: UInt16
@@ -16,7 +16,7 @@ Children:
   - Name: FilesystemRoot
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "%PROJECTDIR%\\"
+    Value: "file:///c:/plc"
   - Name: MinimumPASVPort
     Type: BaseDataVariableType
     DataType: UInt16
@@ -32,20 +32,17 @@ Children:
   - Name: Username
     Type: BaseDataVariableType
     DataType: String
-    Value: ""
+    Value: "Admin"
   - Name: Password
     Type: BaseDataVariableType
     DataType: Password
-    Value: ""
+    Value: "123"
   - Name: ServerCertificateFile
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: ""
   - Name: ServerPrivateKeyFile
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: ""
   - Name: UseFTPS
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: true

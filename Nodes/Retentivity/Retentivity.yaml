@@ -10,7 +10,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Duration
     ReferenceType: HasProperty
-    Value: "0:00:00:0.0000000"
   - Name: DeltaObserverEnabled
     Type: BaseDataVariableType
     DataType: Boolean
